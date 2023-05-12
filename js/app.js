@@ -20,9 +20,3 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
-// Glider carousel code
-window.addEventListener("load", function () {
-  new Glider(document.querySelector(".glider"), {
-    setting_name: setting_value,
-  });
-});
