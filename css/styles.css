@@ -142,7 +142,9 @@ p {
   }
 }
 /*  global classes */
-
+a {
+  color: var(--clr-links);
+}
 .btn {
   text-transform: uppercase;
   background: var(--clr-main-5);
@@ -449,36 +451,29 @@ About
 }
 /*
 =============== 
-Skills
+Services
 ===============
 */
-.skills-section {
+.services-section {
   background: var(--clr-primary-10);
 }
-.skill-container img {
-  height: 100px;
-  width: auto;
-}
-.skills-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 3rem;
-}
-.single-skill {
-  margin: 0 auto;
-}
-.skill-title {
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
   text-align: center;
-  padding-top: 0.75rem;
 }
-@media screen and (min-width: 992px) {
-  .skills-center {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 3rem 8rem;
-  }
-  .skill-container img {
-    height: 140px;
-    width: auto;
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr-main-5);
+}
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
   }
 
   .about-info {
