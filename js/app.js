@@ -48,9 +48,22 @@ scrollLinks.forEach(function (link) {
     // navigate to specific spot on page, get href attribute
     const id = e.currentTarget.getAttribute("href").slice(1);
     // console.log(id);
-
     const element = document.getElementById(id);
-    let position = element.offsetTop;
+
+    // calculate the heights
+    const navHeight = navbar.getBoundingClientRect().height;
+    // containerHeight is a global var
+    const fixedNav = navbar.classList.contains("navbar-fixed");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) {
+      position = position - navHeight;
+    }
+
+    if (navHeight > 82) {
+      position = position + containerHeight;
+    }
+
     // console.log(position);
     window.scrollTo({ left: 0, top: position });
     sidebar.classList.remove("show-sidebar");
