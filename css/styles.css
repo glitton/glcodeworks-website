@@ -223,7 +223,7 @@ Navbar
   display: none;
 }
 .nav-logo {
-  height: 60px;
+  height: 90px;
 }
 .nav-btn {
   background: transparent;
@@ -611,11 +611,13 @@ Contact
 .video-text {
   text-align: center;
   max-width: 30rem;
+  height: auto;
 }
 .video-text img {
-  max-width: 50%;
-  height: auto;
-  margin: 0 auto;
+  /* max-width: 50%; */
+  /* width: 100%; */
+  /* height: auto; */
+  /* margin: 0 auto; */
 }
 .video-banner {
   background: var(--clr-primary-10);
