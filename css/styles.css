@@ -640,7 +640,7 @@ Contact
 }
 .fa-envelope,
 .fa-mobile {
-  color: var(--clr-primary-1);
+  color: var(--clr-main-5);
 }
 .contact-methods span {
   color: var(--clr-grey-1);
@@ -654,18 +654,6 @@ Contact
     opacity: 0.4;
   }
 }
-
-/*
-=============== 
-Timeline
-===============
-*/
-
-/*
-=============== 
-Blog
-===============
-*/
 
 /*
 =============== 
