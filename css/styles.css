@@ -467,8 +467,7 @@ Services
   border-radius: var(--radius);
   text-align: center;
 }
-.service-icon,
-.single-project-icon {
+.service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--clr-main-5);
@@ -579,6 +578,12 @@ Projects
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
+}
+
+.single-project-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr-main-5);
 }
 /*
 =============== 
