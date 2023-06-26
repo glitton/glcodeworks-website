@@ -467,7 +467,8 @@ Services
   border-radius: var(--radius);
   text-align: center;
 }
-.service-icon {
+.service-icon,
+.single-project-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--clr-main-5);
@@ -571,6 +572,14 @@ Projects
   }
 }
 
+/* individual projects */
+.single-project-container {
+  background: var(--clr-grey-10);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
 /*
 =============== 
 Contact
