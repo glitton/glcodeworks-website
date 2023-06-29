@@ -604,10 +604,33 @@ Projects
   margin-bottom: 1.5rem;
   color: var(--clr-main-5);
 }
-
 .icon {
-  /* animation: bounce 2s ease-in-out infinite; */
+  transition: var(--transition);
 }
+.icon:hover {
+  transform: scale(1.2);
+}
+/* =============== 
+ other tech 
+ ===============
+*/
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tech {
+  width: 300px;
+  height: auto;
+}
+article.tech img {
+  border-radius: var(--radius);
+}
+/* @media screen and (min-width: 772px) {
+  .tech {
+    flex-basis: 33.3333%;
+  }
+} */
 
 /*
 =============== 
