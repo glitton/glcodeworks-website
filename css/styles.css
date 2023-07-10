@@ -591,7 +591,12 @@ Projects
   }
 }
 
-/* individual projects */
+/*
+=============== 
+Projects Main
+===============
+*/
+
 .single-project-container {
   background: var(--clr-grey-10);
   padding: 3rem 1.5rem;
@@ -610,6 +615,13 @@ Projects
 .icon:hover {
   transform: scale(1.2);
 }
+
+/*
+=============== 
+Websites
+===============
+*/
+
 /* =============== 
  other tech 
  ===============
