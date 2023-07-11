@@ -621,9 +621,18 @@ Projects Main
 Websites
 ===============
 */
+.website-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 .website-card {
-  background: var(--clr-primary-5);
+  background: var(--clr-white);
   position: relative;
+  width: 460px;
+  height: auto;
+  margin: 1rem auto;
 }
 .website-card-details {
   position: absolute;
@@ -634,22 +643,42 @@ Websites
   cursor: pointer;
   transition: var(--transition);
 }
+.website-name {
+  text-align: center;
+}
 .website-card-img {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
   transition: var(--transition);
+  border-radius: var(--radius);
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.submenu {
+  border: 1px solid var(--clr-grey-8);
 }
 .website-link-code {
   display: flex;
   justify-content: space-around;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+.website-card-icon {
+  color: var(--clr-grey-2);
 }
 .website-card:hover .website-card-img {
   opacity: 0.2;
 }
 .website-card:hover .website-card-details {
   opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .website-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .website-card {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
 }
 /* =============== 
  other tech 
