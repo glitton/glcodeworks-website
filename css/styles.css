@@ -247,7 +247,7 @@ Navbar
   }
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     column-gap: 2rem;
   }
