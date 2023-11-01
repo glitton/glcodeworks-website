@@ -396,7 +396,7 @@ Hero
     width: 100%;
     height: 100%;
     border: 0.25rem solid var(--clr-main-4);
-    top: 3rem;
+    top: 1.5rem;
     right: -2rem;
     border-radius: var(--radius);
   }
@@ -445,8 +445,9 @@ About
     position: relative;
   }
   .about-img::before {
+    top: 2rem;
     left: -2rem;
-    height: 92%;
+    height: 88%;
   }
   .about-info {
     align-self: center;
