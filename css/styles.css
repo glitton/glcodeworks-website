@@ -408,6 +408,13 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
+.about-photo {
+  max-width: 25rem;
+  max-height: 26rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  position: relative;
+}
 
 /*
 =============== 
@@ -447,7 +454,7 @@ About
   .about-img::before {
     top: 2rem;
     left: -2rem;
-    height: 88%;
+    height: 90%;
   }
   .about-info {
     align-self: center;
