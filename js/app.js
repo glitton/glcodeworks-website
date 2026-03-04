@@ -69,3 +69,29 @@ scrollLinks.forEach(function (link) {
     sidebar.classList.remove("show-sidebar");
   });
 });
+
+// ********** dropdown functionality ************
+// ADD THE DROPDOWN CODE HERE:
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+// Only add event listeners if dropdown elements exist
+if (dropdown && dropdownToggle) {
+  dropdownToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdown.classList.toggle("active");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+
+  // Close dropdown when sidebar is opened (for mobile)
+  navBtn.addEventListener("click", function () {
+    dropdown.classList.remove("active");
+    sidebar.classList.add("show-sidebar");
+  });
+}
