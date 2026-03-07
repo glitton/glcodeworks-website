@@ -468,7 +468,7 @@ Services
 .services-section {
   background: var(--clr-primary-10);
 }
-.service {
+.services {
   background: var(--clr-white);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
@@ -709,6 +709,35 @@ article.tech img {
     flex-basis: 33.3333%;
   }
 } */
+
+/*
+=============== 
+Blog
+===============
+*/
+
+.blog-section {
+  background: var(--clr-primary-10);
+}
+.blog {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.blog-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr-main-5);
+}
+@media screen and (min-width: 676px) {
+  .blog-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+}
 
 /*
 =============== 
