@@ -719,6 +719,11 @@ Blog
 .blog-section {
   background: var(--clr-primary-10);
 }
+.blog-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
 .blog {
   background: var(--clr-white);
   padding: 3rem 1.5rem;
@@ -731,11 +736,13 @@ Blog
   margin-bottom: 1.5rem;
   color: var(--clr-main-5);
 }
-@media screen and (min-width: 676px) {
+/* Single column layout for better readability on larger screens */
+@media screen and (min-width: 992px) {
   .blog-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.5rem;
+    width: 95vw;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 }
 
@@ -849,4 +856,46 @@ Footer
 .footer p {
   text-transform: capitalize;
   font-size: 0.8rem;
+}
+
+/*
+=============== 
+Under Construction Page
+===============
+*/
+
+.under-construction {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-primary-10);
+}
+
+.under-construction-content {
+  text-align: center;
+}
+
+.under-construction-content h1 {
+  font-size: 4rem;
+  color: var(--clr-grey-1);
+}
+
+.under-construction-content p {
+  font-size: 2rem;
+  color: var(--clr-grey-5);
+}
+
+.under-construction-icon {
+  font-size: 10rem;
+  color: var(--clr-primary-1);
+}
+
+@media screen and (max-width: 768px) {
+  .under-construction-content h1 {
+    font-size: 3rem;
+  }
+
+  .under-construction-content p {
+    font-size: 1.2rem;
+  }
 }
